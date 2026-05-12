@@ -1,4 +1,4 @@
-# YOLOv8 Detect · Count · Colorize 🎨
+# YOLOv8 Detect · Count · Colorize
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat&logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
@@ -7,27 +7,27 @@
 
 ---
 
-## 📋 About
+## About
 
 Real-time object detection system using **YOLOv8** that does three things at once:
-- 🔍 **Detects** objects from your webcam using YOLOv8
-- 🔢 **Counts** the total number of detected objects live on screen
-- 🎨 **Colorizes** each object class with its own unique persistent color
+- **Detects** objects from your webcam using YOLOv8
+- **Counts** the total number of detected objects live on screen
+- **Colorizes** each object class with its own unique persistent color
 
 Each class gets a random color on first detection and **keeps that exact color for every frame**, making it effortless to visually distinguish between classes.
 
 **Key Features:**
-- ⚡ Real-time detection at 25–60 FPS (depends on model + hardware)
-- 🎨 **Unique persistent color per class** — consistent across all frames
-- 🔢 **Live object counter** displayed on screen at all times
-- 🏷️ Confidence scores shown on every bounding box
-- 📹 Live webcam stream processing
-- 🖥️ Auto full-screen window on launch
-- 🧹 Clean modular code — easy to read and extend
+- Real-time detection at 25–60 FPS (depends on model + hardware)
+- **Unique persistent color per class** — consistent across all frames
+- **Live object counter** displayed on screen at all times
+- Confidence scores shown on every bounding box
+- Live webcam stream processing
+- Auto full-screen window on launch
+- Clean modular code — easy to read and extend
 
 ---
 
-## 🎨 What Makes This Different?
+## What Makes This Different?
 
 Most object detection demos use a fixed color list. This project assigns a **random color to each class dynamically**:
 
@@ -42,7 +42,7 @@ Every next "car" frame        →  same Blue used
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -53,7 +53,7 @@ Every next "car" frame        →  same Blue used
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Run
 ```bash
@@ -99,17 +99,9 @@ python main.py
 5. **Counter updated** — total object count shown live on screen
 6. **Press `Q`** to quit
 
-### Output Example
-```
-[INFO] Loading model: yolov8s.pt
-[INFO] Camera opened at 1920×1080
-[INFO] Press  Q  to quit.
-[INFO] Quit signal received — exiting.
-```
-
 ---
 
-## 💡 How the Color System Works
+## How the Color System Works
 
 ### Color Assignment Logic
 ```python
@@ -134,7 +126,7 @@ for box in result.boxes:
 
 ---
 
-## 🎨 Customization Guide
+## Customization Guide
 
 ### Option 1: Manual Color Assignment
 ```python
@@ -164,7 +156,7 @@ FRAME_HEIGHT = 480
 ### Option 5: Use Different YOLOv8 Variant
 ```python
 MODEL_PATH = "yolov8n.pt"  # Nano  — fastest
-MODEL_PATH = "yolov8s.pt"  # Small — balanced ⭐ default
+MODEL_PATH = "yolov8s.pt"  # Small — balanced default
 MODEL_PATH = "yolov8m.pt"  # Medium
 MODEL_PATH = "yolov8l.pt"  # Large
 MODEL_PATH = "yolov8x.pt"  # Extra Large — most accurate
@@ -191,7 +183,7 @@ cap = cv2.VideoCapture("path/to/video.mp4")
 
 ---
 
-## 🔧 Advanced Configuration
+## Advanced Configuration
 
 ### GPU Acceleration
 ```bash
@@ -217,7 +209,7 @@ while True:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### `ModuleNotFoundError: No module named 'ultralytics'`
 ```bash
@@ -256,7 +248,7 @@ MODEL_PATH = "yolov8s.pt"  # Use a smaller model
 
 ---
 
-## 🚀 Next Steps / Extensions
+## Next Steps / Extensions
 
 1. **Add Object Tracking** — Use DeepSORT to track objects across frames with IDs
 2. **Add Recording** — Save the detection video to a file
@@ -267,19 +259,22 @@ MODEL_PATH = "yolov8s.pt"  # Use a smaller model
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-yolov8-detect-count-colorize/
-├── main.py              # Main detection script
-├── requirements.txt     # Python dependencies
-├── .gitignore           # Ignores weights, venvs, cache
-└── README.md            # This file
+real-time-yolo-color-detection/
+├── main.py                 # Main detection script
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+├── LICENSE                # MIT License
+├── images/
+│   └── demo.png           # Demo screenshot
+└── .gitignore             # Git ignore rules
 ```
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Found a bug? Have an idea? Contributions are welcome!
 
@@ -291,7 +286,7 @@ Found a bug? Have an idea? Contributions are welcome!
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
@@ -299,26 +294,28 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Your Name** — AI / Computer Vision Enthusiast
+**Fiby Ehab** — AI Engineer
 
-📧 **Email:** your@email.com
-💼 **LinkedIn:** [Your Name](https://linkedin.com/in/your-profile)
-🐙 **GitHub:** [@your-username](https://github.com/your-username)
+**Email:** your@email.com
+
+**LinkedIn:** [Fiby Ehab](https://www.linkedin.com/in/fiby-ehab-270b55286/)
+
+**GitHub:** [@FibyEhab](https://github.com/FibyEhab)  
 
 Feel free to reach out for questions, suggestions, or collaborations!
 
 ---
 
-## ⭐ Support This Project
+## Support This Project
 
 If this project helped you:
 - **⭐ Star** this repository
-- **🍴 Fork** it for your own use
-- **📢 Share** it with others learning computer vision
+- **Fork** it for your own use
+- **Share** it with others learning computer vision
 
-Every star motivates me to keep building! 🙏
+Every star motivates me to keep building!
 
 ---
 
